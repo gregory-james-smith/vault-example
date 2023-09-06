@@ -25,3 +25,5 @@ title: Vault
 A folder or git repository.
 
 All the markdown files in `/docs` in a flat structure.
+
+the entry point is `index.md`.
