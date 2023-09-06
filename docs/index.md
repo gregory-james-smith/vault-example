@@ -12,3 +12,9 @@ title: Vault
 | note taking tool |
 | wiki |
 | data lake |
+
+# Specification
+
+A folder or git repository.
+
+All the markdown files in `/docs` in a flat structure.
