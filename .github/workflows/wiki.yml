@@ -1,0 +1,34 @@
+name: Publish wiki
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: create output folder
+        id: output_folder
+        run: |
+          mkdir output
+      - name: create file list
+        id: files_list
+        run: |
+          # Enable glob star
+          shopt -s globstar
+          # Record the paths to all the markdown files
+          cd src
+          echo "files=$(printf '"src/%s" ' **/*.md)" > $GITHUB_OUTPUT
+      - uses: docker://pandoc/latex:3.1.1
+        with:
+          args: >-
+            --template=https://raw.githubusercontent.com/gregory-james-smith/latex-template-classic/master/default.tex?token=GITHUB_TOKEN
+            --top-level-division=part
+            -f markdown+rebase_relative_paths+mark+emoji
+            --output=output/book.pdf
+            ${{ steps.files_list.outputs.files }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: output
+          
