@@ -21,12 +21,11 @@ jobs:
           echo "files=$(printf '"src/%s" ' **/*.md)" > $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:3.1.1
         with:
-          args: >-
-            --template=https://raw.githubusercontent.com/gregory-james-smith/latex-template-classic/master/default.tex?token=GITHUB_TOKEN
-            --top-level-division=part
-            -f markdown+rebase_relative_paths+mark+emoji
-            --output=output/book.pdf
-            ${{ steps.files_list.outputs.files }}
+          run: |
+            echo 
+            for f in ./*.md; do
+              echo "$f"
+            done
       - uses: actions/upload-artifact@v3
         with:
           name: output
