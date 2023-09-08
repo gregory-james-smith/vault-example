@@ -11,14 +11,6 @@ jobs:
         id: output_folder
         run: |
           mkdir output
-      - name: create file list
-        id: files_list
-        run: |
-          # Enable glob star
-          shopt -s globstar
-          # Record the paths to all the markdown files
-          cd src
-          echo "files=$(printf '"src/%s" ' **/*.md)" > $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:3.1.1
         with:
           run: |
