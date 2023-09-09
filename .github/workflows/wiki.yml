@@ -14,7 +14,6 @@ jobs:
       - uses: docker://pandoc/latex:3.1.1
         with:
           run: |
-            echo 
             for f in docs/*.md; do
               echo "$f"
               pandoc -f html --output=output/$f.html $f.md
