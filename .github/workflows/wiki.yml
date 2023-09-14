@@ -18,7 +18,8 @@ jobs:
             -c "
               for f in docs/*.md; do
                 echo $f
-                g=`basename "${filename%.*}"`
+                g=$(basename -- "$f")
+                echo $g
                 pandoc -f markdown -t html --output=output/$g $f
               done
             "
