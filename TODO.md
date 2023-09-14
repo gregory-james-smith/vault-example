@@ -1,2 +1,3 @@
 - [ ] Add styling using single CSS file
 - [ ] Keep the files flat or allow folders?
+- [ ] Use tailwind for CSS?
