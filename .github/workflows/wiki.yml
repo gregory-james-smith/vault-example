@@ -18,7 +18,7 @@ jobs:
             -c "
               for f in docs/*.md; do
                 echo '$f'
-                pandoc -f markdown -t html --output=output/$f.html $f.md
+                pandoc -f markdown -t html --output=output/$f.html $f
               done
             "
       - uses: actions/upload-artifact@v3
