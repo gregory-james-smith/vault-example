@@ -1,3 +1,8 @@
+---
+title: This is a title
+subtitle: This is a sub-title
+---
+
 # Top level header
 
 Cras tempor at dui sagittis efficitur. Sed semper ligula lacus. Etiam lorem felis, convallis a maximus at, eleifend nec felis. Donec sollicitudin tortor id magna pretium fringilla. Donec consequat quis risus vitae congue. Aenean viverra lectus ipsum, ac ornare risus mattis vel. Vivamus sollicitudin nulla libero. Vivamus rutrum consequat ante, non condimentum ipsum mattis vel. Suspendisse ipsum arcu, malesuada sed congue sed, congue eget magna. Morbi ut elementum magna.
