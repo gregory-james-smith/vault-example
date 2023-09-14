@@ -11,13 +11,16 @@ jobs:
         id: output_folder
         run: |
           mkdir output
-      - uses: docker://pandoc/latex:3.1.1
+      - uses: docker://pandoc/extra:3.1.1
         with:
-          run: |
-            for f in docs/*.md; do
-              echo "$f"
-              pandoc -f markdown -t html --output=output/$f.html $f.md
-            done
+          entrypoint: /bin/sh
+          args: >-
+            -c "
+              for f in docs/*.md; do
+                echo '$f'
+                pandoc -f markdown -t html --output=output/$f.html $f.md
+              done
+            "
       - uses: actions/upload-artifact@v3
         with:
           name: output
