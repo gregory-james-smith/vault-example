@@ -20,7 +20,11 @@ jobs:
                 echo $f
                 g=$(basename -- "$f" .md)
                 echo $g
-                pandoc --standalone --embed-resource --css=https://raw.githubusercontent.com/gregory-james-smith/template-pandoc-pandora/master/src/stylesheet.css -f markdown -t html --output=output/$g.html $f
+                pandoc --standalone --embed-resource \
+                --css=https://raw.githubusercontent.com/gregory-james-smith/template-pandoc-pandora/master/src/stylesheet.css \
+                -f markdown -t html \
+                --output=output/$g.html \
+                $f
               done
             "
       - uses: actions/upload-artifact@v3
