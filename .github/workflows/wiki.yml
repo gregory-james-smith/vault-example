@@ -18,9 +18,9 @@ jobs:
             -c "
               for f in docs/*.md; do
                 echo $f
-                g=$(basename -- "$f")
+                g=$(basename -- "$f" .md)
                 echo $g
-                pandoc -f markdown -t html --output=output/$g $f
+                pandoc -f markdown -t html --output=output/$g.html $f
               done
             "
       - uses: actions/upload-artifact@v3
