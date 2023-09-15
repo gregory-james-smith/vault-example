@@ -1,6 +1,9 @@
 ---
 title: Vault
+subtitle: An example
 ---
+
+* [[./headers]]
 
 # What
 
