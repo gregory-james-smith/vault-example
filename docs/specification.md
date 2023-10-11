@@ -6,13 +6,17 @@ A Vault is a folder.
 
 The folder can be held as a git repository to provide version control, but interfacing with git and version control as a feature is outside the scope of Vault.
 
+# Pages
+
 Each page of a Vault is generated from a markdown file in `/docs` or `/src`.
 While the markdown files can be nested in other folders, it is idiomatic for the files to be stored in a flat structure.
 
 The entry point for the Vault is the `index.md` file.
 
 Markdown files in dot folders do not generate Vault pages.
-These files can be embedded in pages.
+These files can be embedded in other pages.
+
+# Frontmatter
 
 Markdown files can contain YAML frontmatter.
 
