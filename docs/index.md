@@ -3,8 +3,6 @@ title: Vault
 subtitle: An example
 ---
 
-* [[./headers]]
-
 # What
 
 | Term | Description |
@@ -22,6 +20,15 @@ subtitle: An example
 | local first | The solution is designed firstly to run locally on a device and is not dependent on centralised hardware, servers or resources. |
 | open standards | The solution uses open standards and specifications so that it can be created and used openly by different tools and in different ways. |
 | vendor agnostic | 
+
+# Wikilinks
+
+Wikilinks have the syntax `[[...]]` or `[[...|...]]`.
+The first argument is the URL and the second is the markup text of the link.
+
+The URL is relative, case sensitive, with spaces are replaced with underscores, and the file type suffix is ommitted.
+
+* [[./headers]]
 
 # Specification
 
