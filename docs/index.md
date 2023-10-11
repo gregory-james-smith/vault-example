@@ -28,15 +28,5 @@ The first argument is the URL and the second is the markup text of the link.
 
 The URL is relative, case sensitive, with spaces are replaced with underscores, and the file type suffix is ommitted.
 
+* [[./specification|Specification]]
 * [[./headers]]
-
-# Specification
-
-A folder or git repository.
-
-All the markdown files in `/docs` in a flat structure.
-
-The entry point is `index.md`.
-
-Files in dot folders are not made into webpages.
-These files can be embedded in other pages.
