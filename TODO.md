@@ -1,4 +1,4 @@
 - [ ] Add styling using single CSS file
-- [ ] Keep the files flat or allow folders?
+- [x] Keep the files flat or allow folders?
 - [ ] How to publish wiki?
 - [ ] Use tailwind for CSS?
