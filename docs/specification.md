@@ -26,7 +26,7 @@ The name of the Vault webpage will be the markdown filename with spaces replaced
 
 # Markdown specification
 
-The specification for the flavour of markdown used is given [here](https://gist.github.com/gregory-james-smith/89e2ebe65d95c3a227dee5ed93c0701a).
+The specification for the flavour of markdown used is given [here](https://gist.github.com/gregory-james-smith/89e2ebe65d95c3a227dee5ed93c0701a) with the following extensions and exceptions.
 
 ## Wikilinks
 
