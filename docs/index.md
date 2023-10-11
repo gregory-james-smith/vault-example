@@ -20,5 +20,8 @@ The first argument is the URL and the second is the markup text of the link.
 
 The URL is relative, case sensitive, with spaces are replaced with underscores, and the file type suffix is ommitted.
 
+# Contents
+
 * [[./specification|Specification]]
 * [[./headers]]
+* [[./design-objectives|Design objectives]]
