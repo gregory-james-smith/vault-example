@@ -1,4 +1,6 @@
-# Specification
+---
+title: Specification
+---
 
 A Vault is a folder.
 
@@ -22,4 +24,15 @@ The filename of the markdown file does not need to match the title of the Vault 
 
 The name of the Vault webpage will be the markdown filename with spaces replaced with underscores and with `.html` suffix.
 
+# Markdown specification
+
 The specification for the flavour of markdown used is given [here](https://gist.github.com/gregory-james-smith/89e2ebe65d95c3a227dee5ed93c0701a).
+
+## Wikilinks
+
+Vault markdown files support wikilinks.
+
+Wikilinks have the syntax `[[...]]` or `[[...|...]]`.
+The first argument is the URL and the second is the markup text of the link.
+
+The URL is relative, case sensitive, with spaces are replaced with underscores, and the file type suffix is ommitted.
