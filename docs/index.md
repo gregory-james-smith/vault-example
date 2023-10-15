@@ -7,6 +7,6 @@ A Vault is a personal knowledge base^[A database for storing and organising pers
 consisting of a wiki hypermedia structure^[A hypertext web publication with little inherent structure.]
 of markdown^[Markdown is a lightweight markup language for rich text whose files have the `.md` extension and is designed to also be human readable in its plain text source code form.] files.
 
-A Vault has a [[./specification|specification]] which aims to satisfy the [[./design-objectives|design objectives]].
+The Vault [[./specification|specification]] aims to satisfy the [[./design-objectives|design objectives]].
 The [[./implementation|implementation]] builds a Vault.
 This [[./example|example]] demonstrates the features of a Vault.
