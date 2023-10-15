@@ -22,7 +22,7 @@ jobs:
                 echo $g
                 pandoc --standalone --embed-resource \
                 --css=https://raw.githubusercontent.com/gregory-james-smith/template-pandoc-pandora/master/src/stylesheet.css \
-                -f markdown+mark+emoji \
+                -f markdown+mark+emoji+wikilinks_title_after_pipe \
                 -t html \
                 --output=output/$g.html \
                 $f
