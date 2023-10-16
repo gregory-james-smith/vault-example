@@ -11,7 +11,7 @@ jobs:
         id: output_folder
         run: |
           mkdir output
-      - uses: docker://pandoc/extra:3.1.1
+      - uses: docker://pandoc/extra:3.0.1
         with:
           entrypoint: /bin/sh
           args: >-
