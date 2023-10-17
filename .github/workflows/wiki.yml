@@ -14,7 +14,7 @@ jobs:
       - name: get the stylesheet
         run: |
           curl -o stylesheet.css https://gist.githubusercontent.com/dashed/6714393/raw/ae966d9d0806eb1e24462d88082a0264438adc50/github-pandoc.css
-      - uses: docker://pandoc/extra:3.0.1
+      - uses: docker://pandoc/extra:3.1.1
         with:
           entrypoint: /bin/sh
           args: >-
