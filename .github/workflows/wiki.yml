@@ -13,7 +13,10 @@ jobs:
           mkdir output
       - name: get the stylesheet
         run: |
-          curl -o stylesheet.css https://raw.githubusercontent.com/gregory-james-smith/template-pandoc-pandora/master/src/stylesheet.css?token=${{ secrets.PANDORA }}
+          gh api \
+            -H "Accept: application/vnd.github.raw" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/gregory-james-smith/template-pandoc-pandora/contents/src/stylesheet.css | jq -r '.content' > stylesheet.css
       - uses: docker://pandoc/extra:3.1.1
         with:
           entrypoint: /bin/sh
