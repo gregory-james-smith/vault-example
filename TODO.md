@@ -2,3 +2,8 @@
 - [x] Keep the files flat or allow folders?
 - [ ] How to publish wiki?
 - [ ] Use tailwind for CSS?
+- [ ] Review features of Obsidian and Foam to steal
+- [ ] Editor support for renaming internal links
+- [ ] Finding orphaned pages
+- [ ] Embedding markdown files in other pages which are not turned into pages themselves
+- [ ] Wikilinks that work with markdown sourcecode and generated HTML
