@@ -6,8 +6,9 @@
   - [ ] Markdown footnote support in VSCode, see <https://marketplace.visualstudio.com/items?itemName=bierner.markdown-footnotes>
   - [ ] Editing support and copying images when pasting images, see <https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image>
   - [ ] Task manager using TODO tree, see <https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree>
-- [ ] Editor support for renaming internal links
-- [ ] Finding orphaned pages
+  - [ ] Editor support for renaming internal links
+  - [ ] Preview links
+  - [ ] Finding orphaned pages
 - [ ] Embedding markdown files in other pages which are not turned into pages themselves
 - [ ] Wikilinks that work with markdown sourcecode and generated HTML
 - [ ] Make a GUI editor as an optional replacement for VSCode and publishing features of GitHub actions
