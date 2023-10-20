@@ -7,3 +7,4 @@
 - [ ] Finding orphaned pages
 - [ ] Embedding markdown files in other pages which are not turned into pages themselves
 - [ ] Wikilinks that work with markdown sourcecode and generated HTML
+- [ ] Editing support and copying images when pasting images, see <https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image>
