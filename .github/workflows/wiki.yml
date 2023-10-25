@@ -6,7 +6,8 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - name: create output folder
         id: output_folder
         run: |
@@ -19,7 +20,8 @@ jobs:
             /repos/gregory-james-smith/template-pandoc-pandora/contents/src/stylesheet.css > stylesheet.css
         env:
           GITHUB_TOKEN: ${{ secrets.PANDORA }}
-      - uses: docker://pandoc/extra:3.1.1
+      - name: Build 🔧
+        uses: docker://pandoc/extra:3.1.1
         with:
           entrypoint: /bin/sh
           args: >-
@@ -40,4 +42,7 @@ jobs:
         with:
           name: output
           path: output
-          
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: output
