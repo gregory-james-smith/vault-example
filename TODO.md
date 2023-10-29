@@ -10,5 +10,5 @@
   - [ ] Preview links
   - [ ] Finding orphaned pages
 - [ ] Embedding markdown files in other pages which are not turned into pages themselves
-- [ ] Wikilinks that work with markdown sourcecode and generated HTML
+- [x] Wikilinks that work with markdown sourcecode and generated HTML
 - [ ] Make a GUI editor as an optional replacement for VSCode and publishing features of GitHub actions
