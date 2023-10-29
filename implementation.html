@@ -55,6 +55,13 @@ file.</p>
 <p>See the actions in <code>/.github</code>. 🚧 This is a work in
 progress and other implementations will be created.</p>
 <!-- Make a table of the design objectives and then discuss how they were achieved. Maybe this should be in a design decision page. -->
+<h1 id="build">Build</h1>
+<p>Pandoc is used to generate HTML files from the markdown source
+code.</p>
+<p>Each markdown file is converted into an HTML file with the same path
+structure, but in <code>/build</code>. During the build process, the
+assets are moved to <code>/build</code> and a CSS styleheet is added to
+each HTML file.</p>
 <h2 id="styelsheet-template">Styelsheet template</h2>
 <p>A CSS stylesheet file is used to style the pages. This is stored in a
 separate repository.</p>
@@ -63,5 +70,10 @@ CLI</a> and a <a href="https://docs.github.com/en/authentication/keeping-your-ac
 access token</a> stored as a secret to <a href="https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28">access
 a repo content using the GitHub API</a>. Alternatively the GitHub API
 can be called with <a href="https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api?apiVersion=2022-11-28">curl</a>.</p>
+<h1 id="deploy">Deploy</h1>
+<p>The Vault is deployed using Github pages.</p>
+<p>The repository is set to use Github pages using the default branch
+<code>gh-pages</code>. A step in repository action deploys the folder of
+build HTML files and assets to this branch.</p>
 </body>
 </html>
