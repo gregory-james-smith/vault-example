@@ -1,6 +1,6 @@
 - [x] Add styling using single CSS file
 - [x] Keep the files flat or allow folders?
-- [ ] How to publish wiki?
+- [x] How to publish wiki?
 - [ ] Use tailwind for CSS?
 - [ ] Review features of Obsidian and Foam to steal
   - [ ] Markdown footnote support in VSCode, see <https://marketplace.visualstudio.com/items?itemName=bierner.markdown-footnotes>
