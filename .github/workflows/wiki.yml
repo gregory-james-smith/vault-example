@@ -62,6 +62,6 @@ jobs:
     steps:
       - id: deployment
         name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: .
+          folder: output
