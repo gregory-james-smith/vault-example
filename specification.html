@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Specification</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">h1 .title {
+color: red;
+}
+h1 {
+color: green;
+}
+h2 {
+color: red;
+}
+h3 {
+color: yellow;
+}
+h4 {
+color: blue;
+}
+h5 {
+color: orange;
+}
+h6 {
+color: purple;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Specification</h1>
+</header>
+<p>A Vault is a folder.</p>
+<p>The folder can be held as a git repository to provide version
+control, but interfacing with git and version control as a feature is
+outside the scope of Vault.</p>
+<h1 id="pages">Pages</h1>
+<p>Each page of a Vault is generated from a markdown file in
+<code>/docs</code> or <code>/src</code>. While the markdown files can be
+nested in other folders, it is idiomatic for the files to be stored in a
+flat structure.</p>
+<p>The entry point for the Vault is the <code>index.md</code> file.</p>
+<p>Markdown files in dot folders do not generate Vault pages. These
+files can be embedded in other pages.</p>
+<h1 id="frontmatter">Frontmatter</h1>
+<p>Markdown files can contain YAML frontmatter.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Frontmatter key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>title</td>
+<td>The title of the Vault page, displayed as the webpage title.</td>
+</tr>
+</tbody>
+</table>
+<p>The filename of the markdown file does not need to match the title of
+the Vault page, but it is idiomatic that they do.</p>
+<p>The name of the Vault webpage will be the markdown filename with
+spaces replaced with underscores and with <code>.html</code> suffix.</p>
+<h1 id="markdown-specification">Markdown specification</h1>
+<p>The specification for the flavour of markdown used is given <a href="https://gist.github.com/gregory-james-smith/89e2ebe65d95c3a227dee5ed93c0701a">here</a>
+with the following extensions and exceptions.</p>
+<h2 id="wikilinks">Wikilinks</h2>
+<p>Vault markdown files support wikilinks.</p>
+<p>Wikilinks have the syntax <code>[[...]]</code> or
+<code>[[...|...]]</code>. The first argument is the URL and the second
+is the markup text of the link.</p>
+<p>The URL is relative, case sensitive, with spaces are replaced with
+underscores, and the file type suffix is ommitted.</p>
+</body>
+</html>

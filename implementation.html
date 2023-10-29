@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Implementation</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">h1 .title {
+color: red;
+}
+h1 {
+color: green;
+}
+h2 {
+color: red;
+}
+h3 {
+color: yellow;
+}
+h4 {
+color: blue;
+}
+h5 {
+color: orange;
+}
+h6 {
+color: purple;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Implementation</h1>
+</header>
+<p>A basic explaination of the implementation is that
+<code>pandoc</code> is used to generate a webpage from every markdown
+file.</p>
+<p>See the actions in <code>/.github</code>. 🚧 This is a work in
+progress and other implementations will be created.</p>
+<!-- Make a table of the design objectives and then discuss how they were achieved. Maybe this should be in a design decision page. -->
+<h2 id="styelsheet-template">Styelsheet template</h2>
+<p>A CSS stylesheet file is used to style the pages. This is stored in a
+separate repository.</p>
+<p>The stylesheet is retrieved using the <a href="https://docs.github.com/en/actions/using-workflows/using-github-cli-in-workflows">GitHub
+CLI</a> and a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">personal
+access token</a> stored as a secret to <a href="https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28">access
+a repo content using the GitHub API</a>. Alternatively the GitHub API
+can be called with <a href="https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api?apiVersion=2022-11-28">curl</a>.</p>
+</body>
+</html>
