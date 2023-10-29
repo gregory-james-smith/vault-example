@@ -8,7 +8,6 @@ This example of a vault will be used to:
 * explain what a Vault is and what it is intended to be used for
 * describe the design objectives and justify the design decisions
 * document the specification of a Vault
-* contain the implementation of the Vaults
+* contain the implementation of a Vault
 
-The vault is published to this URL: 
-<https://gregory-james-smith.github.io/vault-example/>
+This vault is published to the URL <https://gregory-james-smith.github.io/vault-example/>.
