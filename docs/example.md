@@ -11,7 +11,19 @@ Cras tempor at dui sagittis efficitur. Sed semper ligula lacus. Etiam lorem feli
 
 Proin vitae *odio* maximus, euismod nulla sit amet, **varius** eros. Fusce dictum dui vitae risus ultricies, sed aliquet velit ultricies. Maecenas ***ultricies*** euismod tincidunt. Duis *vel* massa elit. Integer in ==rutrum== nisl. Sed sit amet lorem vel orci eleifend **vulputate** sit amet dictum risus. Nullam faucibus odio ex, convallis ~~luctus~~ *sapien* blandit eu. Vivamus mattis H~2~O lectus lectus, ***quis*** pulvinar eros bibendum eu. Mauris id ~~tincidunt~~ arcu, eu convallis massa. Etiam id leo ultrices, malesuada velit sed, **semper** quam. Fusce efficitur volutpat arcu. Nullam malesuada, ==libero== a pharetra euismod, ex erat sagittis C^13^ dolor, ac *pulvinar* nunc erat sed ligula. Pellentesque eget **velit** efficitur, [molestie]{.smallcaps} sem eget, suscipit odio. Sed in porttitor _sapien_. Phasellus semper mi lorem, at faucibus diam __vestibulum__ ut. Aliquam consequat, ipsum eu dictum posuere, dui ___libero___ porttitor sapien, vel finibus tortor est non massa.
 
-### Medium header
+### Blocks (Tertiary header)
+
+::: info
+This is an information box.
+:::
+
+$$
+x = 0
+$$
+
+```js
+const a = 0;
+```
 
 Maecenas consequat erat eget justo auctor maximus sed et leo. Pellentesque eget lectus turpis. Suspendisse laoreet eleifend lectus et tempus. Integer a sem pharetra, suscipit nulla non, ultrices dui. Morbi vel nibh sagittis, convallis libero eu, pretium enim. Donec vel condimentum justo. Pellentesque vel gravida lectus. Mauris eget ante ligula. Morbi nec nisl risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id pulvinar nibh, nec vulputate orci.
 
