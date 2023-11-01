@@ -10,10 +10,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: Create output folder 📁
-        id: output_folder
+      - name: Create build folder 📁
+        id: build_folder
         run: |
-          mkdir output
+          mkdir build
       - name: Stylesheet 🎨
         run: |
           gh api \
@@ -36,7 +36,7 @@ jobs:
                 --css=./stylesheet.css \
                 -f markdown+mark+emoji+wikilinks_title_after_pipe \
                 -t html \
-                --output=output/$g.html \
+                --output=build/$g.html \
                 $f
               done
             "
@@ -44,8 +44,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: output
+          path: build
       - name: Upload pages 🌐
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: output
+          folder: build
