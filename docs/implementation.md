@@ -14,6 +14,7 @@ See the actions in `/.github`.
 Pandoc is used to generate HTML files from the markdown source code.
 
 Each markdown file in `/docs` is converted into an HTML file in `/build`.
+
 The file structure is preserved.
 During the build process, the assets are moved to `/build` and a CSS styleheet is added to each HTML file.
 
