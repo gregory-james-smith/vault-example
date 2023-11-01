@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: create output folder
+      - name: Create output folder 📁
         id: output_folder
         run: |
           mkdir output
@@ -40,12 +40,12 @@ jobs:
                 $f
               done
             "
-      - name: Upload artifact 
+      - name: Upload artifact 🤐
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
           path: output
-      - name: Upload pages 
+      - name: Upload pages 🌐
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: output
