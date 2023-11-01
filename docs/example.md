@@ -38,6 +38,3 @@ Aenean nec turpis gravida, condimentum nisi gravida, elementum elit. Pellentesqu
 ###### Smallest header
 
 Duis ullamcorper velit id felis tincidunt, at volutpat tellus semper. Quisque eget ex vitae urna fringilla dignissim. Mauris lacinia sapien ut nulla convallis mollis. Quisque commodo, velit ac faucibus accumsan, libero felis scelerisque mauris, et vulputate lacus nulla a libero. In ac sapien neque. Aenean mauris libero, porttitor quis massa vitae, fringilla consectetur elit. Aenean mattis condimentum risus, vel ultrices ipsum commodo nec.
-
-[!include[Embedded file](./embed/embed.md)]
-
