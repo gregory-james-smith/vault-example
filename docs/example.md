@@ -13,10 +13,6 @@ Proin vitae *odio* maximus, euismod nulla sit amet, **varius** eros. Fusce dictu
 
 ### Blocks (Tertiary header)
 
-::: info
-This is an information box.
-:::
-
 $$
 x = 0
 $$
@@ -25,7 +21,13 @@ $$
 const a = 0;
 ```
 
+> To be or not to be. That is the question.
+
 Maecenas consequat erat eget justo auctor maximus sed et leo. Pellentesque eget lectus turpis. Suspendisse laoreet eleifend lectus et tempus. Integer a sem pharetra, suscipit nulla non, ultrices dui. Morbi vel nibh sagittis, convallis libero eu, pretium enim. Donec vel condimentum justo. Pellentesque vel gravida lectus. Mauris eget ante ligula. Morbi nec nisl risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id pulvinar nibh, nec vulputate orci.
+
+::: info
+This is an information box.
+:::
 
 #### Smaller header
 
